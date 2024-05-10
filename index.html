@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>    
+</head>
+<link rel="stylesheet" href="index.css"/>
+<body>
+<form name="form">
+
+    <h1>Cadastro</h1>
+    <label>Nome</label>
+    <input type="text" id="nomeid" required="required"/>
+
+    <br><br>
+    <label>RG</label>
+    <input type="number" required="required"/>
+
+    <br><br>
+    <label>CPF</label>
+    <input type="number" required="required" />
+
+    <br><br>
+    <label>Data de nascimento</label>
+    <input type="date"  required="required" />
+
+    <br><br>
+    <label>Endereço</label>
+    <input type="text" required="required"/>
+
+    <br><br>
+    <p>Sexo</p>
+    <label name="sexo" value="sexo/1">feminino</label>
+    <input type="checkbox" id="sexoid" name="sexo" />
+    <br><br>
+    <label name="sexo" value="sexo/2">masculino</label>
+    <input type="checkbox" />
+    <br><br>
+    <label name="sexo" value="sexo/3">prefiro nao dizer</label>
+    <input type="checkbox" />
+
+    <br><br>
+    <label>Nome do pai</label>
+    <input type="text" required="required" />
+ 
+    <br><br>
+    <label>Nome da mae</label>
+    <input type="text" required="required" />
+   
+    <br><br>
+    <label>Renda</label>
+    <input type="number" required="required" />
+
+    <br><br>
+    <input type="submit" class="enviar" onclick="Enviar();" value="enviar"/>
+    <input type="submit" class="cancelar" onclick="Cancelar();" value="cancelar "/>
+
+</form>
+</body>
+<script src="form.js"></script>
+</html>
